@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "term",
+						"type": "uint256"
+					}
+				],
+				"name": "Staking",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_addr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"XenStak.sol": "XenStak"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"XenStak.sol": {
+			"keccak256": "0x882b6adbff428447741f542e25ea295461062b1c56fabcf09d5982d8ac9de42f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://34d0ac09733fa8e82f9ef1282a6c2c27cfc0b02cb1f624f87bb2c8a84f6ea98d",
+				"dweb:/ipfs/QmVr1nHoYGt9GNjMe63Z9DQreibN6yQQex6c6yVd8L9gs7"
+			]
+		}
+	},
+	"version": 1
+}
