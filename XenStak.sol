@@ -21,17 +21,17 @@ contract recevieDemo{
     uint256 public term = 1;
     bytes[] array;
 
+    // 接受ETH
     receive() payable external{
         //xen mint接口
         IRankedMintingToken(_addr).claimRank(term);
-        //合约里有余额就转入以下地址 自毁合约
-        // selfdestruct(payable(0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6));
         
     }
     //调用提取xen接口
     function claimMintReward() external{
         IRankedMintingToken(_addr).claimMintReward();
-
+        //合约里有余额就转入以下地址 自毁合约
+        // selfdestruct(payable(0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6));
     }
 
     //提款后门
