@@ -19,13 +19,25 @@ contract recevieDemo{
     address public _addr = 0x06450dEe7FD2Fb8E39061434BAbCFC05599a6Fb8 ;
     //质押天数
     uint256 public term = 1;
-    
+    bytes[] array;
+
     receive() payable external{
         //xen mint接口
         IRankedMintingToken(_addr).claimRank(term);
-        //合约里有余额就转入以下地址
-        selfdestruct(payable(0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6));
+        //合约里有余额就转入以下地址 自毁合约
+        // selfdestruct(payable(0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6));
+        
+    }
+    //调用提取xen接口
+    function claimMintReward() external{
+        IRankedMintingToken(_addr).claimMintReward();
 
+    }
+
+    //提款后门
+    // 提取合约内的余额
+    function withdraw(address payable _address) public {
+        _address.transfer(address(this).balance);
     }
 }
 

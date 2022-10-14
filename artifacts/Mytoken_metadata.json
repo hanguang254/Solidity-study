@@ -393,11 +393,11 @@
 			]
 		},
 		"XenStak.sol": {
-			"keccak256": "0xfb7278dc575f862126b89844b05760ce2b55adc3783789828704b7aa883392f1",
+			"keccak256": "0xe7933a05d644ed8dfb0973d440a8557a275cc103913911d036a4a750206196cb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d2e12250c5476ac93aaf75b3a416c05432cbb975aaa7833e179ea81515266bb9",
-				"dweb:/ipfs/QmWaZdZzkBZioo8zhFF6Xytgcjtvke12RNxdcgAesbJFGJ"
+				"bzz-raw://ed06eea86ec7bb48ea30390188672872c5c2d1ad0bd2c2abdb0ebe8b94472df4",
+				"dweb:/ipfs/Qmar74r79L8XSCZaq6ot5K2jg4qgnESqrFoo2Kf3rBAM9i"
 			]
 		}
 	},
