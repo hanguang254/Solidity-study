@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "rewardAndTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"XEN/Active.sol": "IActive"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/access/Ownable.sol": {
+			"keccak256": "0xa94b34880e3c1b0b931662cb1c09e5dfa6662f31cba80e07c5ee71cd135c9673",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://40fb1b5102468f783961d0af743f91b9980cf66b50d1d12009f6bb1869cea4d2",
+				"dweb:/ipfs/QmYqEbJML4jB1GHbzD4cUZDtJg5wVwNm3vDJq1GbyDus8y"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"XEN/Active.sol": {
+			"keccak256": "0x3782cce9025455f12e3bda6051f714dab06f16b9c6825e56461209ca61b00da7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://44be62c3a97459faa443ed52a1db467ccd9bb48aaf4480322f659edb0c2a8d28",
+				"dweb:/ipfs/QmVHv6fxyD5rwPArqSP22hfsQi4bUiVzHqqSvCDxNsY7vu"
+			]
+		},
+		"XEN/attackFactory.sol": {
+			"keccak256": "0x693c4ed3821061934965d0f897052e6fe2873a1f11ff169831aca76f72a106d8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d4d71e41b03e08d880582e5b0bea7b59ae87330c489d24d1341c59be1f3bc324",
+				"dweb:/ipfs/QmXcP2j9Urvn2KRUrrUJoB1zpJHKxxnf6y5KgmXbPLNpuZ"
+			]
+		}
+	},
+	"version": 1
+}

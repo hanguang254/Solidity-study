@@ -71,11 +71,11 @@
 	},
 	"sources": {
 		"CallDemo.sol": {
-			"keccak256": "0x6799db18d908d5adeac1ceac0ac3e792b02bffd57b182fffcf1e897166c45668",
+			"keccak256": "0x7d8500f2664171d0c2fb474f8658a4110300210f5176e9e00c5edcb3e2bb3fc0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e9f875d915c715b59b8a99c5b4a56a39ea3c5586d8063bb6c2adafa0393d405b",
-				"dweb:/ipfs/QmfUr3cuYDXtL6D25n2sD1HLj2AitfEkxufZRHYAke1iBA"
+				"bzz-raw://413e41344475d6656d9b7203e6155e28e004862ddd6c9167cc24fa93eb51f4ae",
+				"dweb:/ipfs/QmXG7JmFxiiiHogWMJrxihFgck695zjoL2Q6B7ZrDWkzSX"
 			]
 		}
 	},
