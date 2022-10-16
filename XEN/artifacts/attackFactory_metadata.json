@@ -189,7 +189,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"XEN/Active.sol": "AttackFactory"
+			"XEN/AttackFactory1.sol": "AttackFactory"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -220,19 +220,19 @@
 			]
 		},
 		"XEN/Active.sol": {
-			"keccak256": "0x3782cce9025455f12e3bda6051f714dab06f16b9c6825e56461209ca61b00da7",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://44be62c3a97459faa443ed52a1db467ccd9bb48aaf4480322f659edb0c2a8d28",
-				"dweb:/ipfs/QmVHv6fxyD5rwPArqSP22hfsQi4bUiVzHqqSvCDxNsY7vu"
-			]
-		},
-		"XEN/attackFactory.sol": {
 			"keccak256": "0x693c4ed3821061934965d0f897052e6fe2873a1f11ff169831aca76f72a106d8",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://d4d71e41b03e08d880582e5b0bea7b59ae87330c489d24d1341c59be1f3bc324",
 				"dweb:/ipfs/QmXcP2j9Urvn2KRUrrUJoB1zpJHKxxnf6y5KgmXbPLNpuZ"
+			]
+		},
+		"XEN/AttackFactory1.sol": {
+			"keccak256": "0x88c4889eb8d74352150582f6079af997715f0fda26e7f3f1a41fa6d180f99dac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://83d0c32c4c9c63696110a25ce4405a0513e78238a48f6b11cb84590da0878632",
+				"dweb:/ipfs/QmepdryfDNkZjPNGUGVr7JxcSxAif5YZafpVXscyDeCq1a"
 			]
 		}
 	},

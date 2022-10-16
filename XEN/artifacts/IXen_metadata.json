@@ -82,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"XEN/attackFactory.sol": "IXen"
+			"XEN/Active.sol": "IXen"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -96,7 +96,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"XEN/attackFactory.sol": {
+		"XEN/Active.sol": {
 			"keccak256": "0x693c4ed3821061934965d0f897052e6fe2873a1f11ff169831aca76f72a106d8",
 			"license": "MIT",
 			"urls": [

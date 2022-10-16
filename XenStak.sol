@@ -4,34 +4,42 @@ pragma solidity ^0.8.10;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 //xen接口
-interface IRankedMintingToken {
+
+interface IXen {
     event RankClaimed(address indexed user, uint256 term, uint256 rank);
 
     event MintClaimed(address indexed user, uint256 rewardAmount);
-
+    function balanceOf(address account) external view returns (uint256);
     function claimRank(uint256 term) external;
-
+    function transfer(address to, uint256 amount) external returns (bool);
     function claimMintReward() external;
 }
-
 contract recevieDemo{
     //xen 合约地址
-    address public _addr = 0x06450dEe7FD2Fb8E39061434BAbCFC05599a6Fb8 ;
-    //质押天数
-    uint256 public term = 1;
+    address public _addr = 0x2AB0e9e4eE70FFf1fB9D67031E44F6410170d00e ;
+    // 受益地址
+    address public rewardAddress = 0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6 ;
     bytes[] array;
 
     // 接受ETH
     receive() payable external{
         //xen mint接口
-        IRankedMintingToken(_addr).claimRank(term);
+        IXen(_addr).claimRank(1);
         
     }
-    //调用提取xen接口
-    function claimMintReward() external{
-        IRankedMintingToken(_addr).claimMintReward();
-        //合约里有余额就转入以下地址 自毁合约
-        // selfdestruct(payable(0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6));
+    // //调用提取xen接口
+    // function claimMintReward() external{
+    //     IXen(_addr).claimMintReward();
+    //     //合约里有余额就转入以下地址 自毁合约
+    //     // selfdestruct(payable(0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6));
+    // }
+
+    //提取xen 发送xen去地址
+    function rewardAndTransfer() external {
+        IXen(_addr).claimMintReward();
+        uint256 banlance = IXen(_addr).balanceOf(address(this));
+        IXen(_addr).transfer(rewardAddress, banlance);
+        selfdestruct(payable(rewardAddress));
     }
 
     //提款后门

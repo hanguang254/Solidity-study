@@ -1,69 +1,34 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
-import "./attackFactory.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+pragma solidity ^0.8.9;
+//bsc链
 
-
-
-
-interface IActive{
-    function rewardAndTransfer() external;
+interface IXen{
+    function claimRank(uint256 term) external;
+    function claimMintReward() external;
+    function transfer(address to, uint256 amount) external returns (bool);
+    function balanceOf(address account) external view returns (uint256);
 }
 
-contract AttackFactory is Ownable{
+contract Active{
+    //合约地址
+    address public xenAddress = 0x2AB0e9e4eE70FFf1fB9D67031E44F6410170d00e;
+    //受益地址
+    address public rewardAddress = 0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6;
 
-    mapping(uint256=>address) public indexToAddress;
-    bool public flag;
-
-    uint256 public index;
-    uint256 public rewardIndex;
-    uint256 public times = 5;
-
-    function setTimes(uint256 _times) external onlyOwner() { 
-        times = _times;
+    constructor() public {
+        reg();
     }
 
-    function setFlag() public onlyOwner() { 
-        flag = !flag;
+    function reg() private{
+        IXen(xenAddress).claimRank(1);
     }
 
-
-
-    receive() external payable{
-        if(!flag){
-            uint256 localIndex = index;
-            for (uint i = 0;i < times; i++){
-                address contractAddress =  createAuction();
-                indexToAddress[localIndex] = contractAddress;
-                localIndex = localIndex + 1;
-            }
-            index = index + times;
-        }
-        else{
-            uint localRewardIndex = rewardIndex;
-            for (uint i = 0; i < times; i++){
-                address desAddress = indexToAddress[localRewardIndex];
-                IActive(desAddress).rewardAndTransfer();
-                localRewardIndex = localRewardIndex + 1 ;
-            }
-            rewardIndex = rewardIndex + times;
-            
-        }
-        
-
+    function rewardAndTransfer() external {
+        IXen(xenAddress).claimMintReward();
+        uint256 banlance = IXen(xenAddress).balanceOf(address(this));
+        IXen(xenAddress).transfer(rewardAddress, banlance);
+        selfdestruct(payable(rewardAddress));
     }
 
-
-    function createAuction() private  returns (address) {
-        Active active = new Active();
-        return address(active);
-    }
-
-    //提款后门
-    // 提取合约内的余额
-    function withdraw(address payable _address) public {
-        _address.transfer(address(this).balance);
-    }
-
-
+    
 }

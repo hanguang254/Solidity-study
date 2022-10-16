@@ -20,22 +20,22 @@
 			},
 			{
 				"inputs": [],
-				"name": "claimMintReward",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "rewardAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "term",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "rewardAndTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -116,11 +116,11 @@
 			]
 		},
 		"XenStak.sol": {
-			"keccak256": "0x727de736ce18d2cc0f7f279a1ff5945fe749fbb5e34d804d1d8609a86ce8d725",
+			"keccak256": "0x73e0562892b35c2a1bb170216984ea53cc9ea2b4e01cc5f529cd95a923845140",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://23fef335123977de982d2262d3e16912e4bba0314aac029423d70b2bbc7c3341",
-				"dweb:/ipfs/QmWft7cUNGsPorQRxy9hFJUuTdqTcAHJiSJ9YeUcBBhxnr"
+				"bzz-raw://c01e0114767f50642428e3f5a5256a87c715af3c9bb6d34edc9e1479f3d5ffdf",
+				"dweb:/ipfs/QmNP8QsowdTiLDWHRsf6F69Y2M5KmFFVkSL15oi75aZYrk"
 			]
 		}
 	},
