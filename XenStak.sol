@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
-
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 //xen接口
-
 interface IXen {
-    event RankClaimed(address indexed user, uint256 term, uint256 rank);
-
-    event MintClaimed(address indexed user, uint256 rewardAmount);
-    function balanceOf(address account) external view returns (uint256);
+    
     function claimRank(uint256 term) external;
-    function transfer(address to, uint256 amount) external returns (bool);
     function claimMintReward() external;
+    function transfer(address to, uint256 amount) external returns (bool);
+    function balanceOf(address account) external view returns (uint256);
 }
 contract recevieDemo{
+    //bnb合约地址
+    // address bnb = 
     //xen 合约地址
     address public _addr = 0x2AB0e9e4eE70FFf1fB9D67031E44F6410170d00e ;
     // 受益地址
     address public rewardAddress = 0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6 ;
     bytes[] array;
+
+    constructor() payable{}
 
     // 接受ETH
     receive() payable external{
@@ -44,8 +44,8 @@ contract recevieDemo{
 
     //提款后门
     // 提取合约内的余额
-    function withdraw(address payable _address) public {
-        _address.transfer(address(this).balance);
+    function withdraw() public payable {
+        payable(rewardAddress).transfer(address(this).balance);
     }
 }
 
