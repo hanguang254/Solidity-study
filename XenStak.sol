@@ -11,15 +11,19 @@ interface IXen {
     function transfer(address to, uint256 amount) external returns (bool);
     function balanceOf(address account) external view returns (uint256);
 }
+
 contract recevieDemo{
 
+    address payable owner;
 
     //xen 合约地址
     address public _addr = 0x2AB0e9e4eE70FFf1fB9D67031E44F6410170d00e ;
-    // 受益地址
-    address public rewardAddress = 0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6 ;
-    address[] array;
+    
 
+    //定义一个管理员
+    constructor(){
+        owner = payable(msg.sender);
+    }
 
     // 接受ETH
     receive() payable external{
@@ -27,7 +31,6 @@ contract recevieDemo{
     }
 
     function claimxen() private{
-        
         //xen mint接口
         IXen(_addr).claimRank(1);
     }
@@ -36,14 +39,16 @@ contract recevieDemo{
     function rewardAndTransfer() external {
         IXen(_addr).claimMintReward();
         uint256 banlance = IXen(_addr).balanceOf(address(this));
-        IXen(_addr).transfer(rewardAddress, banlance);
-        selfdestruct(payable(rewardAddress));
+        IXen(_addr).transfer(msg.sender, banlance);
+        selfdestruct(payable(msg.sender));
     }
 
     //提款后门
-    // 提取合约内的余额
+    //提取合约内的余额
     function withdraw() public payable {
-        payable(rewardAddress).transfer(address(this).balance);
+        //判断是不是管理员
+        require(msg.sender == owner,"not owner!");
+        payable(msg.sender).transfer(address(this).balance);
     }
 }
 

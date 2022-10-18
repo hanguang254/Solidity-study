@@ -7,20 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "_addr",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "rewardAddress",
+				"name": "_addr",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -39,16 +31,10 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "_address",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -116,11 +102,11 @@
 			]
 		},
 		"XenStak.sol": {
-			"keccak256": "0x73e0562892b35c2a1bb170216984ea53cc9ea2b4e01cc5f529cd95a923845140",
+			"keccak256": "0x2f2baf22038cefdf0ae69f586263b764fe51535a2463fdb13d288e242a16fee6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c01e0114767f50642428e3f5a5256a87c715af3c9bb6d34edc9e1479f3d5ffdf",
-				"dweb:/ipfs/QmNP8QsowdTiLDWHRsf6F69Y2M5KmFFVkSL15oi75aZYrk"
+				"bzz-raw://10e1f1d1ef8ff44eab27324393b057b50561123ea4dd41646fac1fd9d2ce8e3a",
+				"dweb:/ipfs/QmRmfy3BYUrd2EKXgHjsnsp4kVcFz6kbw4oAkVuzeapzdX"
 			]
 		}
 	},

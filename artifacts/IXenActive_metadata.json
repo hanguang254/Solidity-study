@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "rewardTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"XenFactory.sol": "IXenActive"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"XenActive.sol": {
+			"keccak256": "0x74a72468afec9bbc5724e5ded007a996e5acbaeb00fa6320d40d29d2e11705a0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://506d599fbd5840510fdb8cad8ee779a030f7fdc840dabe3329eb89b17b00a657",
+				"dweb:/ipfs/QmWiZxmxouKZUz6hXMuYi1eufvmBGKX9J2W2W1L3zGu8Qb"
+			]
+		},
+		"XenFactory.sol": {
+			"keccak256": "0xadd55f41bc450aa7a5126141cbb6f8d1ebed4e6d721f6275dae43b77d90defcc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d1aec8e6bc55a9d2bcc2d79ef5cdda01c7da55bd4ded7e7b8432e3149eee1c09",
+				"dweb:/ipfs/QmPZLEpWPc5dJMkVdzHW4S3VnrvevsfTNK9t3XkmrhVj1H"
+			]
+		}
+	},
+	"version": 1
+}
