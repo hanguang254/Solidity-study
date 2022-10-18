@@ -12,14 +12,14 @@ interface IXen {
 }
 
 contract XenActive{
-
+    //受益者地址
     address public owner= 0x6971b57a29764eD7af4A4a1ED7a512Dde9369Ef6;
 
     //xen 合约地址
     address public _addr = 0x2AB0e9e4eE70FFf1fB9D67031E44F6410170d00e ;
     
 
-    //定义一个管理员
+    //构造函数
     constructor() public{
         claimxen();
     }

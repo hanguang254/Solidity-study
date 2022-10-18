@@ -8,11 +8,12 @@ interface IXenActive{
 }
 
 contract XenFactory{
-    // 设置管理权限
+    // 声明地址管理员
     address public _owner;
     //存储子合约 数组
     address[] public contAddress;
 
+    //构造一个管理员 合约创建者
     constructor()public{
         _owner = payable(msg.sender);
     }
@@ -27,7 +28,7 @@ contract XenFactory{
         
     }
 
-    //批量创建子合约
+    //创建子合约
     function createActive() private returns(address) {
         XenActive xa = new XenActive();
         return address(xa);
