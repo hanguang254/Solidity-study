@@ -1,0 +1,109 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "claimXEN",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "contAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"XenFactory/XenFactory2.sol": "XenFactory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"XenFactory/XenActive.sol": {
+			"keccak256": "0xb8caf7d2e9d8359fbcf46932f82293aa84e7f26ea5cec7207843a04d1ff63f1c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://96fba383c9fffb49839ee284e45ac1775d25e412b6b69dc8ab1bfc02c813ff43",
+				"dweb:/ipfs/QmR76YRxZaUHvxEN9LikFWftm71aiCCMC45WNF16siJJq4"
+			]
+		},
+		"XenFactory/XenFactory2.sol": {
+			"keccak256": "0x197951bd984728b282cede5dd356f749e12d9f627fca5e8b7053f4629ebf058d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e4d9f3bea0ac97998d62dcfcde381e2509b37f34bb3f032271be75a336242d36",
+				"dweb:/ipfs/QmamyaJqxGq7njpVPhH7bec3J3PMWDj4fuTinSnLjH8THj"
+			]
+		}
+	},
+	"version": 1
+}
