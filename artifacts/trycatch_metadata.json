@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -15,7 +20,7 @@
 						"type": "bytes"
 					}
 				],
-				"name": "Log",
+				"name": "CatchByte",
 				"type": "event"
 			},
 			{
@@ -23,57 +28,33 @@
 				"inputs": [
 					{
 						"indexed": false,
-						"internalType": "address",
-						"name": "sender",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "recipient",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
 					}
 				],
-				"name": "Transfer",
+				"name": "CatchEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "SuccessEvent",
 				"type": "event"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					}
-				],
-				"name": "mint",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "recipient",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "transfer",
+				"name": "execute",
 				"outputs": [
 					{
 						"internalType": "bool",
-						"name": "",
+						"name": "success",
 						"type": "bool"
 					}
 				],
@@ -94,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"selector.sol": "test"
+			"try-catch.sol": "trycatch"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -108,12 +89,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"selector.sol": {
-			"keccak256": "0x4254379fe9d36feccadd4bee20d82b29c485b273be3ad5d79470f9a53b43e079",
+		"try-catch.sol": {
+			"keccak256": "0x57fcfed8966cb73dd65dbce291cb0d7f6105ce38e74f6d4098ce14b622234cc7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d1a65dd04b09699207ad081eca9659706f9ad370e146e2b46eb63157d69cc5b5",
-				"dweb:/ipfs/QmW8cCH2JfK45GYviw41TdMwTga87gg9XdaTJKBgizPDFK"
+				"bzz-raw://6fde52d1c93859397850cfba9088db3d0bdffb269eb5c2b9b57f1f8444a97d5d",
+				"dweb:/ipfs/QmcjZmqGQFvraGyPuAhXvFUViHMdSKgWvbu3fk17EopzM3"
 			]
 		}
 	},
