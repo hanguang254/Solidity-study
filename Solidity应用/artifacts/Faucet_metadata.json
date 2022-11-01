@@ -1,0 +1,136 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenContract",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "Receiver",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "Amount",
+						"type": "uint256"
+					}
+				],
+				"name": "SendToken",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "amountAllowed",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "requestTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "requestedAddress",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenContract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity应用/Faucet.sol": "Faucet"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity应用/Faucet.sol": {
+			"keccak256": "0x5d24ae7c32d4ae0c457edf9b721aa6a19d98a5cefe514b55340c7f5b1adb5fa4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://61ff33596c82c693a7691a000bfb42bd6fe44e9b493daa39ce7fa50e90b4e5e0",
+				"dweb:/ipfs/QmQUeoExa1j6E8ThxzqabncRX91Eph6YhUn8xnDr2ULFsa"
+			]
+		},
+		"Solidity应用/IERC20.sol": {
+			"keccak256": "0xe3d24ad2b075359e8d3f8a1d01ba9bcbfb408842c9c827ae973091144c926215",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ed3f5faaa8355b1b768bd8d75e4a235397ba3d60d61d7f4f275e753aeacbc98d",
+				"dweb:/ipfs/QmWrBVHAks5hmq5Figi7JKZyhZVQG81tBpJS4PBw7RwMb9"
+			]
+		}
+	},
+	"version": 1
+}
