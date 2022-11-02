@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "claimXEN",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "index",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "indexAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mintmxen",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"XenFactory(FTM）/fmxenFactory.sol": "MxenFactory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"XenFactory(FTM）/fmxenActive.sol": {
+			"keccak256": "0x45f472e71cc4504f65b37b6bea88fc33ec4834d6b8da764ec2854ec23a0c695f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://942548508eeb96caade2bec304e8a6127961eba9b3a893c810a826866713407b",
+				"dweb:/ipfs/QmWSNvXDuwQyXwhCZprwqknhmyV6pkbFgQJpYNYPYjToMW"
+			]
+		},
+		"XenFactory(FTM）/fmxenFactory.sol": {
+			"keccak256": "0x6603d1bc2c1d7bbfdcac2cb50231dd431d251d49eead24c73aa432fab1bf3a53",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2098f7fa1bfa117b82622cdeb016a2781e4e039fe06711f071f8a25169aca35d",
+				"dweb:/ipfs/QmSW2bZ2YiEBnbPqpyUt124NVURZ2vJqQq7YCeMfAM9r9P"
+			]
+		}
+	},
+	"version": 1
+}
