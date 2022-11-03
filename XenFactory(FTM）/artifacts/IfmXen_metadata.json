@@ -97,11 +97,11 @@
 	},
 	"sources": {
 		"XenFactory(FTM）/fmxenActive.sol": {
-			"keccak256": "0x45f472e71cc4504f65b37b6bea88fc33ec4834d6b8da764ec2854ec23a0c695f",
+			"keccak256": "0x500a33bdb29532db4f4aa222b5bcc7df3d36a4def03af470e800a3c302d47357",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://942548508eeb96caade2bec304e8a6127961eba9b3a893c810a826866713407b",
-				"dweb:/ipfs/QmWSNvXDuwQyXwhCZprwqknhmyV6pkbFgQJpYNYPYjToMW"
+				"bzz-raw://2dca0da1846972d656783a29f80ae7195724696f5bc60753960a48947554a066",
+				"dweb:/ipfs/QmYK85zQkzo6cFYGpvVKaW9f83kL6gP3b3WnCZhTpUWPLV"
 			]
 		}
 	},

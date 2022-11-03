@@ -25,19 +25,20 @@ contract fmxenFactory{
 
     // ftm莲批量mint  
     function mintmxen() public {
+        uint256 ins = index;
         //批量创建合约
         for(uint i=0;i<20;i++){
             fmXenActive cAddress = new fmXenActive{salt: bytes32(i)}();
-            indexAddress[index] = address(cAddress);
-            index = index + 1;
+            indexAddress[ins] = address(cAddress);
+            ins = ins + 1;
         }
-        
+        index=ins;
     }
 
     // 批量提取子合约 Mxen
-    function claimXEN() public{
+    function claimXEN() public {
         require(msg.sender == _owner ,"not owner !");
-        for(uint i = 0;i< index;i++){
+        for(uint i = 0;i<index;i++){
             address stakaddress = indexAddress[i];
             fmXenActive(stakaddress).rewardTransfer();
         } 

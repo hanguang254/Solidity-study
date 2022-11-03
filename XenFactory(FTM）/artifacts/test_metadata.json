@@ -7,38 +7,27 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "index",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test11",
+				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "_addr",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "rewardTransfer",
+				"name": "test22",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -57,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"XenFactory(FTM）/fmxenActive.sol": "fmXenActive"
+			"XenFactory(FTM）/test.sol": "test"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -71,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"XenFactory(FTM）/fmxenActive.sol": {
-			"keccak256": "0x500a33bdb29532db4f4aa222b5bcc7df3d36a4def03af470e800a3c302d47357",
+		"XenFactory(FTM）/test.sol": {
+			"keccak256": "0xa290b4718db623c7ed7e852088a2635c39b8ca587feb678aa90ac711ddd70ce5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2dca0da1846972d656783a29f80ae7195724696f5bc60753960a48947554a066",
-				"dweb:/ipfs/QmYK85zQkzo6cFYGpvVKaW9f83kL6gP3b3WnCZhTpUWPLV"
+				"bzz-raw://f799aa739ecb4389d5799e362710cf1c1513ebf363ac987ea0380aac8aba6c19",
+				"dweb:/ipfs/QmRtWepPhhpoLHNDyAi9tKkWsziueERbhMsDGdK2FjXqC2"
 			]
 		}
 	},
