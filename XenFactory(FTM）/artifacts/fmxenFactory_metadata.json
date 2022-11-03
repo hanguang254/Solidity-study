@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.17+commit.8df45f5f"
 	},
 	"language": "Solidity",
 	"output": {
@@ -83,7 +83,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"XenFactory(FTM）/fmxenFactory.sol": "fmxenFactory"
+			"fmxenFactory.sol": "fmxenFactory"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -97,7 +97,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"XenFactory(FTM）/fmxenActive.sol": {
+		"fmxenActive.sol": {
 			"keccak256": "0x500a33bdb29532db4f4aa222b5bcc7df3d36a4def03af470e800a3c302d47357",
 			"license": "MIT",
 			"urls": [
@@ -105,12 +105,12 @@
 				"dweb:/ipfs/QmYK85zQkzo6cFYGpvVKaW9f83kL6gP3b3WnCZhTpUWPLV"
 			]
 		},
-		"XenFactory(FTM）/fmxenFactory.sol": {
-			"keccak256": "0x9deddc0c437ef2153d16540eb4a920e2c02fb5e9b6a3fe6abd45ad4ef12f9343",
+		"fmxenFactory.sol": {
+			"keccak256": "0x94c04d6b04d9ff91e0b15dc48cc30fb0067d3d97c965aa2ff08536d9857ceaf0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b0d28b088c106488e2ef914430df57de4a05d9fa9b2ec380d052af9802208383",
-				"dweb:/ipfs/QmViMezWnR894egDmkcr9EX7TFVi9yv45xD1e5UCe2SRbD"
+				"bzz-raw://d25530203681bdba8c63dc78dcdcb0bb019dc29e5845d60e16e9d61b68714a68",
+				"dweb:/ipfs/QmYi7kKWdU7B2WosGGpqrrTPm5JZb1oB6U9pYjRxJ585gt"
 			]
 		}
 	},

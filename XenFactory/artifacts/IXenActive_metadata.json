@@ -41,11 +41,11 @@
 	},
 	"sources": {
 		"XenFactory/MxenFactory3.sol": {
-			"keccak256": "0x9fcdf7163ed8a579d49c7b01b3e737a8e067b250de47680434f763d39302404e",
+			"keccak256": "0x8eb7671e764edf663d3dabb79045d013d025996c928655df47b7d479eedde174",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://542b4436172de727459903451045c8654c786d6bc73682811483c97efbcf33aa",
-				"dweb:/ipfs/QmbxzKTRnPgZGWFXV4zLC7Sy31AsW6XjfR6xwBo1chu6ib"
+				"bzz-raw://684b8c8a846a9b108871563f0a3f2dbf9b752e58ffd4f926d96b7dc484909f76",
+				"dweb:/ipfs/QmQAu1ZFa6QktpN8LNSVdxSRvLSdc6Lyega9U2DB8hMzex"
 			]
 		},
 		"XenFactory/XenActive.sol": {

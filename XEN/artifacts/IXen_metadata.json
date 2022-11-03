@@ -97,11 +97,11 @@
 	},
 	"sources": {
 		"XEN/Active.sol": {
-			"keccak256": "0x693c4ed3821061934965d0f897052e6fe2873a1f11ff169831aca76f72a106d8",
+			"keccak256": "0x4ffc03e8d1a39ec67d6100bcbf002157c160739de6999b98a4e57698a9d8fe54",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4d71e41b03e08d880582e5b0bea7b59ae87330c489d24d1341c59be1f3bc324",
-				"dweb:/ipfs/QmXcP2j9Urvn2KRUrrUJoB1zpJHKxxnf6y5KgmXbPLNpuZ"
+				"bzz-raw://dffd7b851658a692976a0be4da9a8539b977688b8e85b3c9f911ab51192ace3e",
+				"dweb:/ipfs/QmNeo5TzvbHGdbkhqArwWYBDaewq8C4JwwBBsEpykVtskL"
 			]
 		}
 	},

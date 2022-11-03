@@ -82,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"XenFactory/XenActive.sol": "IXen"
+			"XenFactory/XenCreateActive.sol": "IXen"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -96,12 +96,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"XenFactory/XenActive.sol": {
-			"keccak256": "0xb8caf7d2e9d8359fbcf46932f82293aa84e7f26ea5cec7207843a04d1ff63f1c",
+		"XenFactory/XenCreateActive.sol": {
+			"keccak256": "0xa71d71995d2a1c531ccfa2fd5a1adfaa7c7ca850cde543a1a9cf64387f9e66a8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://96fba383c9fffb49839ee284e45ac1775d25e412b6b69dc8ab1bfc02c813ff43",
-				"dweb:/ipfs/QmR76YRxZaUHvxEN9LikFWftm71aiCCMC45WNF16siJJq4"
+				"bzz-raw://097a0384260f053138e69cd51cff3fbde28068b8302e6e027a25a358160ad465",
+				"dweb:/ipfs/QmXECuYQQmNqWjdmSC1fFupx8eMvnkh8XeT7MBD3au3Fmm"
 			]
 		}
 	},

@@ -1,0 +1,98 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "claimXEN",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "index",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "indexAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"XenFactory/XenCreate2.sol": "MxenCrFactory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"XenFactory/XenCreate2.sol": {
+			"keccak256": "0x47558bc421fd2eaf36648176b4d2690c6b88d5b5d62453840ee2ac6a5b3b515f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://123e0916bf2382772e1624908b07680a7ddd29e018e7355ea52e81a6124b8908",
+				"dweb:/ipfs/QmZJfsLuZUcAwtaFCvzjxVtHSCt1jcfg8oQjr1YbnbCcMV"
+			]
+		},
+		"XenFactory/XenCreateActive.sol": {
+			"keccak256": "0x49bf4a08f195cb118e5aca0f4fc450c0d3242390b869305d87c1cf7bf023df22",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://831901ca2b94bf906ad77377052da66938465fce8f0ae8a907a3d52aec570c0c",
+				"dweb:/ipfs/QmWkDJKvMNUwXxKgF3xEw2MqC333f1PTgJKstk65Q3Du1r"
+			]
+		}
+	},
+	"version": 1
+}

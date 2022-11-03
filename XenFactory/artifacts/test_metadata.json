@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "index",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "mintaddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tiqu",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"XenFactory/test.sol": "test"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"XenFactory/XenCreate2.sol": {
+			"keccak256": "0xf404ebda0e551e70ca777f50ccec29582ffe26277012e90aed75ed68c6ca24b9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a21b16a963fbc7b6a033e8634bdcd3379af63b5b7cda316309d4e496e8b3507d",
+				"dweb:/ipfs/QmV1wgSq3vPQYoHftmVYiKA4pHHFQ3YSdNNyvk5ngDcKAp"
+			]
+		},
+		"XenFactory/XenCreateActive.sol": {
+			"keccak256": "0xa71d71995d2a1c531ccfa2fd5a1adfaa7c7ca850cde543a1a9cf64387f9e66a8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://097a0384260f053138e69cd51cff3fbde28068b8302e6e027a25a358160ad465",
+				"dweb:/ipfs/QmXECuYQQmNqWjdmSC1fFupx8eMvnkh8XeT7MBD3au3Fmm"
+			]
+		},
+		"XenFactory/test.sol": {
+			"keccak256": "0xdad61a06bf87c49bfeeab5bb2361362845351ee48a7a54f896eda4053c13768f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://205917fc26f15e6e9de7edc5f62431f5734b13f9f4088d6c9844cacd8831756d",
+				"dweb:/ipfs/QmYtgaDDgRPDQq95WT67EmvfRzcZLj8AqEZSWkis7SxU3V"
+			]
+		}
+	},
+	"version": 1
+}
