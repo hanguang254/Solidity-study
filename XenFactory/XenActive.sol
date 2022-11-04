@@ -26,7 +26,7 @@ contract XenActive{
 
     function claimxen() private{
         //xen mint接口
-        IXen(_addr).claimRank(1);
+        IXen(_addr).claimRank(3);
     }
     
     //提取xen 发送xen去地址

@@ -1,10 +1,15 @@
 {
 	"compiler": {
-		"version": "0.8.17+commit.8df45f5f"
+		"version": "0.8.10+commit.fc410830"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
 			{
 				"inputs": [],
 				"name": "_addr",
@@ -16,13 +21,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "claimxen",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -59,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"XenFactory/XenCreateActive.sol": "XenActive"
+			"XenFactory/XenActive.sol": "XenActive"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -73,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"XenFactory/XenCreateActive.sol": {
-			"keccak256": "0xa307ced838db12f7dbc8064c4638079480fe0e5da78a54693ac91fbc7a644ac1",
+		"XenFactory/XenActive.sol": {
+			"keccak256": "0x36b69b6e161b5ff21d519745aaa3c0757f71fa53f73e2c1b8aa87a9f65512837",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ef70638e2abf1c0933b2eff444c92049d6f299d244fda7a3c614173d3c43f69e",
-				"dweb:/ipfs/QmeM4yB6AtqvLyzxGetQMBEmz9eypJujjptvKSerZsR9NV"
+				"bzz-raw://9b26cf6c9629af9c6c80163a13e6f72f0845c02c3f2cc64ecc9c46452efea45e",
+				"dweb:/ipfs/QmNbaCB2ntac12nG7grAdcVpvMDL5JwyKNSpgKytLznWjo"
 			]
 		}
 	},

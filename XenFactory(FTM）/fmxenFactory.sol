@@ -27,9 +27,9 @@ contract fmxenFactory{
     function mintmxen() public {
         uint256 ins = index;
         //批量创建合约
-        for(uint i=0;i<40;i++){
+        for(uint i=0;i<20;i++){
             address cadd =  creatcontract(i);
-            indexAddress[ins] = address(cadd);
+            indexAddress[ins] = cadd;
             ins = ins + 1;
         }
         index=ins;
@@ -42,6 +42,7 @@ contract fmxenFactory{
             address stakaddress = indexAddress[i];
             fmXenActive(stakaddress).rewardTransfer();
         } 
+        index = 0;
     }
 
     function creatcontract(uint256 amount) private returns(address){
