@@ -28,7 +28,7 @@ contract fmxenFactory{
         uint256 ins = index;
         //批量创建合约
         for(uint i=0;i<20;i++){
-            address cadd =  creatcontract(i);
+            address cadd =  creatcontract();
             indexAddress[ins] = cadd;
             ins = ins + 1;
         }
@@ -46,8 +46,8 @@ contract fmxenFactory{
         index = 0;
     }
 
-    function creatcontract(uint256 amount) private returns(address){
-        fmXenActive cAddress = new fmXenActive{salt: bytes32(amount)}();
+    function creatcontract() private returns(address){
+        fmXenActive cAddress = new fmXenActive();
         return address(cAddress);
     }
 
