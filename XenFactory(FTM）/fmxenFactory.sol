@@ -37,8 +37,9 @@ contract fmxenFactory{
 
     // 批量提取子合约 Mxen
     function claimXEN() public {
+        uint cindex = index ;
         require(msg.sender == _owner ,"not owner !");
-        for(uint i = 0;i<index;i++){
+        for(uint i = 0;i<cindex;i++){
             address stakaddress = indexAddress[i];
             fmXenActive(stakaddress).rewardTransfer();
         } 
