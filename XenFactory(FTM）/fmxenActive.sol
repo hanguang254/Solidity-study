@@ -26,7 +26,7 @@ contract fmXenActive{
 
     function claimxen() private{
         //xen mint接口
-        IfmXen(_addr).claimRank(30);
+        IfmXen(_addr).claimRank(5);
     }
     
     //提取xen 发送xen去地址

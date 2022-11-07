@@ -83,7 +83,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"XenFactory(FTM）/axenFactory.sol": "fmxenFactory"
+			"XenFactory(FTM）/axenFactory.sol": "aaxenFactory"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -98,11 +98,11 @@
 	},
 	"sources": {
 		"XenFactory(FTM）/axenFactory.sol": {
-			"keccak256": "0xb665ef98fc03bae49a0e69aec24551c1e5d9f3d56feb1c0f7a60c298b875a9a2",
+			"keccak256": "0xd67f181a3333d100dc32751bf48416e190182c4fefc820bdc2f16bc0759e1bb2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0f5c7c5592074b93f1cc64b0c9eded6a9e8363410031ca6bb0ff645b69a9cbd1",
-				"dweb:/ipfs/Qmbxs185Ru48uZqkszu4AnqNym1ARQeugto7hEqHjersMh"
+				"bzz-raw://58027f6d232b5fdb69d9b5bb9b14fd83ea2d8e1657f9882d5c0da4439bafd875",
+				"dweb:/ipfs/QmPEEQwZR2HyoatpCnnyyEuGzWTrHpyAb3HV9HUs6efddu"
 			]
 		},
 		"XenFactory(FTM）/fmxenActive.sol": {
