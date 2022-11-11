@@ -261,5 +261,6 @@ contract ERC721 is IERC721, IERC721Metadata{
     function _baseURI() internal view virtual returns (string memory) {
         return "";
     }
+
 } 
     
