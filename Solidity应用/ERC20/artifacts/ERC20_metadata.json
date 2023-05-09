@@ -283,7 +283,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC20/ERC20.sol": "ERC20"
+			"ERC20.sol": "ERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -297,15 +297,15 @@
 		"remappings": []
 	},
 	"sources": {
-		"ERC20/ERC20.sol": {
-			"keccak256": "0xd6a8afe0845c092ee1a8f43ad2a0d30ae8072316e401b308fb0358e0baa3862d",
+		"ERC20.sol": {
+			"keccak256": "0x48053108073c7c88d8888e6d9b2a1c7dd2f36d8b4b513cac1e04953479c309f1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f231a530196c5bd772bfa8d8b62a16da1ad78ead8c5c59a6ef8724f5eccc2bfb",
-				"dweb:/ipfs/QmVGRBjQRfLnMbZ5XeresgVetKEzetouoYFrzYt6J9BkSw"
+				"bzz-raw://d355f62045f207185aa936d0c60198795d10bccc2d0fb9a48fa5dc3b03ca7f5c",
+				"dweb:/ipfs/QmfKQ35gb5tVCxMfjLH7YtzEN955z48ZwCNCzAjzvJtJBo"
 			]
 		},
-		"ERC20/IERC20.sol": {
+		"IERC20.sol": {
 			"keccak256": "0xe3d24ad2b075359e8d3f8a1d01ba9bcbfb408842c9c827ae973091144c926215",
 			"license": "GPL-3.0",
 			"urls": [

