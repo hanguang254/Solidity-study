@@ -65,5 +65,11 @@ contract SaleWallet is Ownable{
         require(success, "Withdraw failed");
     }
     
+    //selfdestruct contract
+    function kill() payable  external onlyOwner  returns (bool) {
+        selfdestruct(payable (msg.sender));
+        return true;
+    }
+    
     
 }

@@ -1,10 +1,29 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: MIT
+// OpenZeppelin Contracts v4.4.0 (utils/Context.sol)
+
+
 pragma solidity ^0.8.4;
-import "./IERC20.sol";
+import "@openzeppelin/contracts/interfaces/IERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 
-contract Airdrop {
+contract Airdrop is Ownable{
 
+    address[] public  WhiteList;
+
+    function AllowClaim(address from) external view returns (bool){
+        address[] memory ab = WhiteList;
+        for (uint i=0;i<ab.length;i++)
+            if(ab[i] == from){
+                return true;
+            }
+        return false;    
+    }
+
+    function Addlist(address[] calldata _arry) external onlyOwner returns (bool){
+        WhiteList = _arry;
+        return true;
+    }
 
     // 数组求和函数
     function getSum(uint256[] calldata _arr) public pure returns(uint sum)
@@ -18,11 +37,11 @@ contract Airdrop {
     /// @param _token 转账的ERC20代币地址
     /// @param _addresses 空投地址数组
     /// @param _amounts 代币数量数组（每个地址的空投数量）
-    function multiTransferToken(
+    function AirdropTransferToken(
         address _token,
         address[] calldata _addresses,
         uint256[] calldata _amounts
-        ) external {
+        ) external  onlyOwner {
         // 检查：_addresses和_amounts数组的长度相等
         require(_addresses.length == _amounts.length, "Lengths of Addresses and Amounts NOT EQUAL");
         IERC20 token = IERC20(_token); // 声明IERC合约变量
@@ -40,7 +59,7 @@ contract Airdrop {
     function multiTransferETH(
         address payable[] calldata _addresses,
         uint256[] calldata _amounts
-    ) public payable {
+    ) public onlyOwner payable {
         // 检查：_addresses和_amounts数组的长度相等
         require(_addresses.length == _amounts.length, "Lengths of Addresses and Amounts NOT EQUAL");
         uint _amountSum = getSum(_amounts); // 计算空投ETH总量
