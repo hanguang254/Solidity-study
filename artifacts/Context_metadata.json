@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"saleIDO\\ProSale.sol": "Context"
+			"transferFactory\\transferActive.sol": "Context"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,11 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"saleIDO\\ProSale.sol": {
-			"keccak256": "0x36aa7f4212e2318b9cf5e16a70e141fd28e849958bd09b5bfa64c9827245e10c",
+		"transferFactory\\transferActive.sol": {
+			"keccak256": "0x8a09710d83af82c5dad37bd288773ae2c4ca49c326bfa4b43617b952338bf827",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://1f436bdd938a07ee3fee949d92c916b0ced5482936d7f49b9f2393c5499455f3",
-				"dweb:/ipfs/QmW2gEKv8f36qwdDgPSygZyPpXW9phCDorXv5KgnBmaYXF"
+				"bzz-raw://475c34667058c296a4a5d778753d0ea17b78795c566b135f78c798775d9265d9",
+				"dweb:/ipfs/QmXmn1LME9yiSoAgagFz2uN5smtpaMWZauT8yVRpcpZ532"
 			]
 		}
 	},
