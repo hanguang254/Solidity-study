@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"saleIDO\\ProSale.sol": "ReentrancyGuard"
+			"transferFactory\\transferActive.sol": "ReentrancyGuard"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,11 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"saleIDO\\ProSale.sol": {
-			"keccak256": "0x36aa7f4212e2318b9cf5e16a70e141fd28e849958bd09b5bfa64c9827245e10c",
+		"transferFactory\\transferActive.sol": {
+			"keccak256": "0xf3c2906fb2f1a505657476ec68119abfd5e9ec0e8ca5e8631a05c387bf9c111c",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://1f436bdd938a07ee3fee949d92c916b0ced5482936d7f49b9f2393c5499455f3",
-				"dweb:/ipfs/QmW2gEKv8f36qwdDgPSygZyPpXW9phCDorXv5KgnBmaYXF"
+				"bzz-raw://d98b138ba04d4513a0f80c9b1e003ba965826c6a4c79edba34dd942e917aa6f0",
+				"dweb:/ipfs/QmRK9RPiXaewp4rvcY8i4GBmYNPhA3eoUfjC9NYhj1LJyv"
 			]
 		}
 	},

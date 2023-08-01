@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "CreateTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getDeployedContracts",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "transferCotract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"transferFactory\\tansferFactory.sol": "transferFactory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"transferFactory/transferActive.sol": {
+			"keccak256": "0x944458d8501910b943e780df086ae19a2cabdcf4d0c9ac776778de5a04b6c503",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://85073c87ccf3217823c3f4d9aef9d0bb6bf3253b9024ab1b82f7c038d267db34",
+				"dweb:/ipfs/QmXV1AZV9YTYKpvPaKkq9t3TNHTbc16866QHanJ6rk9938"
+			]
+		},
+		"transferFactory\\tansferFactory.sol": {
+			"keccak256": "0x68f73d36c43f028cd115afe66e616bd7672e9510e00a76ea152d588feb1f3fc3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ae38cffaee19130798f4a19207c40aefa72f34c7178e0944fa287c4ebb0456f2",
+				"dweb:/ipfs/QmZ6c89yMALqm3qg1zPoTaVkQ5AY1C11eXCxxor8M4Gx5L"
+			]
+		}
+	},
+	"version": 1
+}

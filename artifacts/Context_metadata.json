@@ -34,11 +34,11 @@
 	},
 	"sources": {
 		"transferFactory\\transferActive.sol": {
-			"keccak256": "0x8a09710d83af82c5dad37bd288773ae2c4ca49c326bfa4b43617b952338bf827",
+			"keccak256": "0xf3c2906fb2f1a505657476ec68119abfd5e9ec0e8ca5e8631a05c387bf9c111c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://475c34667058c296a4a5d778753d0ea17b78795c566b135f78c798775d9265d9",
-				"dweb:/ipfs/QmXmn1LME9yiSoAgagFz2uN5smtpaMWZauT8yVRpcpZ532"
+				"bzz-raw://d98b138ba04d4513a0f80c9b1e003ba965826c6a4c79edba34dd942e917aa6f0",
+				"dweb:/ipfs/QmRK9RPiXaewp4rvcY8i4GBmYNPhA3eoUfjC9NYhj1LJyv"
 			]
 		}
 	},
