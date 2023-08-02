@@ -185,13 +185,11 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
         for(uint i = 0 ;i<recipients.length;i++){
             address recipient = recipients[i];
             uint256 amount = amounts[i];
-
-            // 使用`transfer`函数向每个接收者转账
-            // 请注意：使用`transfer`函数时，合约余额必须足够，否则会失败。
-            payable(recipient).transfer(amount);
+            (bool callSuccess, ) = payable(recipient).call{value: amount,gas:2300}("");
+            require(callSuccess,"transfer success");
         }
-        
         return true;
+        
     }
 
     function withdraw(uint256 amount) external onlyOwner returns (bool){

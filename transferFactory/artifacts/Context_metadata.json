@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"transferFactory\\transferActive.sol": "Context"
+			"transferActive.sol": "Context"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"transferFactory\\transferActive.sol": {
-			"keccak256": "0xd475519533a61aad554093a6075f113c70800dcddcdd33757064e40e83552e68",
+		"transferActive.sol": {
+			"keccak256": "0xd22c605b8556ad649804b300b16c7139751cfd36062c9eb43be3bcaec1839e78",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://08f1dee75a717b3b6b4dacaf1c3e4401b0f0041782db24d5a3f5c35cf291b4de",
-				"dweb:/ipfs/QmSvVQFYLYppwHsem9xLCZJf6636mWADKWLbYR4nCVTZoH"
+				"bzz-raw://b5f722455d0e1c7d5bb89d41c5f2734c84abd7b78c455e239c24678b3c95c891",
+				"dweb:/ipfs/QmaqZqFGysdG7Ft3otScUVH7UagcKgHxf11yJL7rxx9QVU"
 			]
 		}
 	},
