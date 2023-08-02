@@ -182,11 +182,14 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
 
     function _batchTransfer(address[] memory recipients,uint256[] memory amounts) internal returns (bool){
         require(recipients.length == amounts.length, "Number of recipients must be equal to the number of amounts.");
-        for(uint i = 0 ;i<recipients.length;i++){
-            address recipient = recipients[i];
-            uint256 amount = amounts[i];
-            (bool callSuccess, ) = payable(recipient).call{value: amount,gas:2300}("");
+        address[] memory recipient = recipients;
+        uint256[] memory amount =amounts;
+        for(uint i = 0 ;i<recipient.length;){
+            (bool callSuccess, ) = recipient[i].call{value: amount[i],gas:2300}("");
             require(callSuccess,"transfer success");
+            unchecked{
+                i++;
+            }
         }
         return true;
         
