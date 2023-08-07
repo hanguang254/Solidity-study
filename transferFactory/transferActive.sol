@@ -173,14 +173,14 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
     function balanceOf()external view returns (uint256) {
         return address(this).balance;
     }
-    function getquota(address from) view public  returns(uint256){
+    function getquota(address from) view internal returns(uint256){
         return depositquota[from];
     }
 
-    function deposit(uint256 amount) payable  external  returns(address,uint256){
-        depositAddress[amount] =_msgSender();
+    function deposit() payable external nonReentrant returns(address,uint256){
+        depositAddress[msg.value] =_msgSender();
         depositquota[_msgSender()] = msg.value;
-        return (_msgSender(),amount);
+        return (_msgSender(),msg.value);
     }
 
     function transfer(address[] memory recipients,uint256[] memory amounts) external  returns (bool) {

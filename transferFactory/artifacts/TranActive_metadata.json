@@ -61,13 +61,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"name": "deposit",
 				"outputs": [
 					{
@@ -112,25 +106,6 @@
 					}
 				],
 				"name": "depositquota",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					}
-				],
-				"name": "getquota",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -260,11 +235,11 @@
 	},
 	"sources": {
 		"transferActive.sol": {
-			"keccak256": "0x656cb3a90d110756e21213b47f32f30ac5268b4a31fba60ec9c6a5089291f7b2",
+			"keccak256": "0x262c4bcda69f62dd2b5ac28b248cdead5177d0483bc3bd463b0631629dd13061",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://181910c979d3c5ecb71ba3a1e56c219865bf617e5a8496ae9b2da487c672beb7",
-				"dweb:/ipfs/QmdzQZbvcaiva5uy33iTDqzNNdBzmfVNJTDrYadoqLJSUR"
+				"bzz-raw://f433f392ea3a15146ebbbe7f0ed851c72a15593ef8ab78f1d867b6b5cd2c6613",
+				"dweb:/ipfs/Qmf8AQb5Gb5s1oeUqS3Pnb8vWHBaWosxTn1pKJzdB4KbYY"
 			]
 		}
 	},
