@@ -35,31 +35,6 @@
 					},
 					{
 						"indexed": false,
-						"internalType": "address[]",
-						"name": "",
-						"type": "address[]"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256[]",
-						"name": "",
-						"type": "uint256[]"
-					}
-				],
-				"name": "Transfer",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"indexed": false,
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -75,6 +50,87 @@
 			{
 				"inputs": [],
 				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "depositAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "depositquota",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					}
+				],
+				"name": "getquota",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -204,11 +260,11 @@
 	},
 	"sources": {
 		"transferActive.sol": {
-			"keccak256": "0x545322c47ef59f1634d978e1fa8131826138379f38fd0e487bbaeb78178b6c38",
+			"keccak256": "0x656cb3a90d110756e21213b47f32f30ac5268b4a31fba60ec9c6a5089291f7b2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c5c9fc7ec606da0a9052b5172dbf7e5a3a1f50240390af0c5192e68f55df31b5",
-				"dweb:/ipfs/QmdmL8MGSjB3NuWp4hHarxWH1awW4wCV2yASVkkq5mE5Pe"
+				"bzz-raw://181910c979d3c5ecb71ba3a1e56c219865bf617e5a8496ae9b2da487c672beb7",
+				"dweb:/ipfs/QmdzQZbvcaiva5uy33iTDqzNNdBzmfVNJTDrYadoqLJSUR"
 			]
 		}
 	},

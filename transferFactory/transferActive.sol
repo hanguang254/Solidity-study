@@ -166,17 +166,34 @@ abstract contract Ownable is Context {
 
 contract TranActive is Context,Ownable,ReentrancyGuard{
 
-
-    event Transfer(address,address[],uint256[]);
+    mapping (uint256 =>address) public depositAddress;
+    mapping (address => uint256) public depositquota;
     event Withdraw(address,uint);
     
     function balanceOf()external view returns (uint256) {
         return address(this).balance;
     }
+    function getquota(address from) view public  returns(uint256){
+        return depositquota[from];
+    }
 
-    function transfer(address[] memory recipients,uint256[] memory amounts) external onlyOwner returns (bool) {
+    function deposit(uint256 amount) payable  external  returns(address,uint256){
+        depositAddress[amount] =_msgSender();
+        depositquota[_msgSender()] = msg.value;
+        return (_msgSender(),amount);
+    }
+
+    function transfer(address[] memory recipients,uint256[] memory amounts) external  returns (bool) {
+        uint256 totalAmount = 0;
+        uint amountlength = amounts.length;
+        for (uint i= 0;i<amountlength;){
+            totalAmount += amounts[i];
+            unchecked{
+                i++;
+            }
+        }
+        require(totalAmount<=getquota(_msgSender()),"Address Insufficient deposit amount");
         _batchTransfer(recipients, amounts);
-        emit Transfer(msg.sender,recipients, amounts);
         return true;
     }
 
@@ -184,14 +201,13 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
         require(recipients.length == amounts.length, "Number of recipients must be equal to the number of amounts.");
         uint addresslength  = recipients.length;
         for(uint i = 0 ;i<addresslength;){
-            (bool callSuccess, ) = recipients[i].call{value: amounts[i],gas:2300}("");
+            (bool callSuccess, ) = recipients[i].call{value: amounts[i]}("");
             require(callSuccess,"transfer success");
             unchecked{
                 i++;
             }
         }
         return true;
-        
     }
 
     function withdraw(uint256 amount) external onlyOwner returns (bool){
