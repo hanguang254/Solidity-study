@@ -99,11 +99,11 @@
 	},
 	"sources": {
 		"transferActive.sol": {
-			"keccak256": "0x262c4bcda69f62dd2b5ac28b248cdead5177d0483bc3bd463b0631629dd13061",
+			"keccak256": "0xf88924873392f3334a882943771d57b08943ec4cc84f75a93e6d6892ce7871b7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f433f392ea3a15146ebbbe7f0ed851c72a15593ef8ab78f1d867b6b5cd2c6613",
-				"dweb:/ipfs/Qmf8AQb5Gb5s1oeUqS3Pnb8vWHBaWosxTn1pKJzdB4KbYY"
+				"bzz-raw://bd27a2e3156a8797cf293ceba0244ac95d7018cc5dfb4380205dd8cd2b88087d",
+				"dweb:/ipfs/QmVNyQ9mcSiAnrsHikbUdhgM67cZkga5FYYc1ybsr3gMbP"
 			]
 		}
 	},

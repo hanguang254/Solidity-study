@@ -177,9 +177,15 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
         return depositquota[from];
     }
 
-    function deposit() payable external nonReentrant returns(address,uint256){
-        depositAddress[msg.value] =_msgSender();
-        depositquota[_msgSender()] = msg.value;
+    function deposit() payable public  nonReentrant returns(address,uint256){
+        uint256 quota = getquota(_msgSender());
+        if(quota == 0){
+            depositAddress[msg.value] =_msgSender();
+            depositquota[_msgSender()] = msg.value;  
+        }else {
+            depositAddress[msg.value+quota] =_msgSender();
+            depositquota[_msgSender()] = msg.value+quota; 
+        }
         return (_msgSender(),msg.value);
     }
 
@@ -217,7 +223,11 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
         return true;
     }
 
-    fallback() external payable {}
+    fallback() external payable {
+        deposit();
+    }
 
-    receive() external payable {}
+    receive() external payable {
+        deposit();
+    }
 }
