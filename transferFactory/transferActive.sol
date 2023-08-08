@@ -190,6 +190,8 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
     }
 
     function transfer(address[] memory recipients,uint256[] memory amounts) external  returns (bool) {
+        uint256 quota = getquota(_msgSender());
+        require(quota != 0,"Not deposit amount");
         uint256 totalAmount = 0;
         uint amountlength = amounts.length;
         for (uint i= 0;i<amountlength;){
@@ -198,7 +200,7 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
                 i++;
             }
         }
-        require(totalAmount<=getquota(_msgSender()),"Address Insufficient deposit amount");
+        require(totalAmount<=quota,"Address Insufficient deposit amount");
         _batchTransfer(recipients, amounts);
         return true;
     }
