@@ -81,25 +81,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "depositAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
@@ -235,11 +216,11 @@
 	},
 	"sources": {
 		"transferActive.sol": {
-			"keccak256": "0x9acd679fd8559fb795dcfc0e85e6701d0920f9d45dd3b9418b5d14ad2b13deb3",
+			"keccak256": "0x9a0a7d1545a3c3d3ca05026e0543d539ba0a1445e34bba2019975d81942ef189",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://67f528c02f438317750679941b69b4ba807aefb01d42cc22627c3fb421454451",
-				"dweb:/ipfs/QmRopHP1MKNuUNoKMFYKzAxhH2yF3AkgxSp6wgkH6373v8"
+				"bzz-raw://9d315720d53f9f97e453e2247c712150e88b2a3030a3e68eb0e8b1c482ad6b1b",
+				"dweb:/ipfs/QmRKVC6f5zB7BToz9J6NV48K7fWGAmDPf3tFX3iW24iYnZ"
 			]
 		}
 	},

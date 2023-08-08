@@ -166,7 +166,6 @@ abstract contract Ownable is Context {
 
 contract TranActive is Context,Ownable,ReentrancyGuard{
 
-    mapping (uint256 =>address) public depositAddress;
     mapping (address => uint256) public depositquota;
     event Withdraw(address,uint);
     
@@ -180,10 +179,8 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
     function deposit() payable public  nonReentrant returns(address,uint256){
         uint256 quota = getquota(_msgSender());
         if(quota == 0){
-            depositAddress[msg.value] =_msgSender();
             depositquota[_msgSender()] = msg.value;  
         }else {
-            depositAddress[msg.value+quota] =_msgSender();
             depositquota[_msgSender()] = msg.value+quota; 
         }
         return (_msgSender(),msg.value);
@@ -202,6 +199,7 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
         }
         require(totalAmount<=quota,"Address Insufficient deposit amount");
         _batchTransfer(recipients, amounts);
+        depositquota[_msgSender()]=quota-totalAmount;
         return true;
     }
 
