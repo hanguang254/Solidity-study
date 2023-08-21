@@ -6,6 +6,17 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "Token",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -25,6 +36,54 @@
 				"type": "event"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "Collect",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "form",
+						"type": "address"
+					}
+				],
+				"name": "SetToken",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -38,10 +97,57 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "v",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					}
+				],
+				"name": "permitTransfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "renounceOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract IERC20Permit",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -61,9 +167,6 @@
 		"devdoc": {
 			"kind": "dev",
 			"methods": {
-				"constructor": {
-					"details": "Initializes the contract setting the deployer as the initial owner."
-				},
 				"owner()": {
 					"details": "Returns the address of the current owner."
 				},
@@ -84,7 +187,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC20Permit\\ERC20Permit.sol": "Ownable"
+			"ERC20Permit\\ERC20Permit.sol": "PermitTokenCollector"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -99,11 +202,11 @@
 	},
 	"sources": {
 		"ERC20Permit\\ERC20Permit.sol": {
-			"keccak256": "0x7a3c3afd50cec4c13b3134588cdbab4c1454f381e828eff9313e808e1970b0c4",
+			"keccak256": "0xecb111fb51120b27798d3d05cefa7e0d767ebe6043def3275d2b6b30d3963431",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7c4452c069138ddf533d10fc162204d9721c8afc6e6db7d00c6134f8d0a42b4f",
-				"dweb:/ipfs/QmTR5QCMDgGCaAabnnVVaFfiXzzMd2q4Lf8RDvBeaD9GyB"
+				"bzz-raw://810ec0333cf56d65929f18c502179bb8e2738371d66d57ec3124225591b54616",
+				"dweb:/ipfs/QmbE4UdTNUb2rMrH264zTEgwGpnt7irwj2FJmn7jRTMcnq"
 			]
 		}
 	},

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.20+commit.a1b79de6"
+		"version": "0.8.10+commit.fc410830"
 	},
 	"language": "Solidity",
 	"output": {
@@ -18,9 +18,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC20Permit\\ERC20Permit.sol": "Context"
+			"ERC20Permit/ERC20Permit.sol": "Context"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"ERC20Permit\\ERC20Permit.sol": {
-			"keccak256": "0x7a3c3afd50cec4c13b3134588cdbab4c1454f381e828eff9313e808e1970b0c4",
+		"ERC20Permit/ERC20Permit.sol": {
+			"keccak256": "0x435a858cd513016c66188e80f3fd9d26321d0c49d061e73941fa6adb7193ea49",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7c4452c069138ddf533d10fc162204d9721c8afc6e6db7d00c6134f8d0a42b4f",
-				"dweb:/ipfs/QmTR5QCMDgGCaAabnnVVaFfiXzzMd2q4Lf8RDvBeaD9GyB"
+				"bzz-raw://f934397e29a571934b82225a5946f629820e5dca075afed54406fda0e8372053",
+				"dweb:/ipfs/QmXcyztW1Ld5ZGXatu1XsLrUWo5hPm9TS677tkr3J5gVxK"
 			]
 		}
 	},
