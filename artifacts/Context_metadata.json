@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"ERC20Permit\\ERC20Permit.sol": {
-			"keccak256": "0x7a3c3afd50cec4c13b3134588cdbab4c1454f381e828eff9313e808e1970b0c4",
+			"keccak256": "0x377f98332756bfe5307bb8589abdaa4062286f5a861a69f994037f774574b94f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7c4452c069138ddf533d10fc162204d9721c8afc6e6db7d00c6134f8d0a42b4f",
-				"dweb:/ipfs/QmTR5QCMDgGCaAabnnVVaFfiXzzMd2q4Lf8RDvBeaD9GyB"
+				"bzz-raw://1d041bff43c60e5cef0cf2def9ec37b3fde8f15ee5047a1955aabcff01bdb454",
+				"dweb:/ipfs/Qmd4ipp1uieKcBzpesnKdy6LqSmaJLd1HkfQicMdMWgvrc"
 			]
 		}
 	},

