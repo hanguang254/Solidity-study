@@ -198,8 +198,8 @@ contract TranActive is Context,Ownable,ReentrancyGuard{
             }
         }
         require(totalAmount<=quota,"Address Insufficient deposit amount");
+		depositquota[_msgSender()]=quota-totalAmount;
         _batchTransfer(recipients, amounts);
-        depositquota[_msgSender()]=quota-totalAmount;
         return true;
     }
 
